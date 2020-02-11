@@ -292,7 +292,7 @@ li {
 	}
 
 	.Content {
-		padding: 64px 0 43px;
+		padding: 48px 0 21px;
 	}
 
 	.Content__logo {
@@ -310,13 +310,12 @@ li {
 		margin: 0 0 12px;
 	}
 
-	.Content__app_store_bg_hover {
-		opacity: 0;
-		transition: opacity .1s ease-in-out;
+	.Content__app_store_bg > * {
+		transition: all .1s ease-in-out;
 	}
 
-	.Content__app_store:hover .Content__app_store_bg_hover {
-		opacity: 1;
+	.Content__app_store:hover #app_store_bg {
+		fill: #313233;
 	}
 
 	.Footer {
@@ -369,6 +368,19 @@ li {
 
 	.Footer {
 		padding: 24px 0;
+	}
+
+
+	@supports (padding-bottom: constant(safe-area-inset-bottom)) {
+		.Footer {
+			padding-bottom: calc(24px + constant(safe-area-inset-bottom));
+		}
+	}
+
+	@supports (padding-bottom: env(safe-area-inset-bottom)) {
+		.Footer {
+			padding-bottom: calc(24px + env(safe-area-inset-bottom));
+		}
 	}
 
 	.Footer__social {
