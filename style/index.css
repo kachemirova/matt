@@ -193,7 +193,7 @@ li {
 	flex-wrap: wrap;
 	align-items: center;
 	width: 220px;
-	padding: 12px;
+	padding: 10px;
 }
 
 .Content__qr > svg {
@@ -207,8 +207,8 @@ li {
 }
 
 .Content__qr_code {
-	width: 52px;
-	height: 52px;
+	width: 58px;
+	height: 58px;
 	background-image: url("../img/qr_code.png");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -218,8 +218,8 @@ li {
 .Content__qr_separator {
 	display: block;
 	width: 1px;
-	height: 36px;
-	margin: 0 12px;
+	height: 38px;
+	margin: 0 10px;
 	content: '';
 	opacity: .44;
 	border-radius: 1px;
